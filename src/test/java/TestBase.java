@@ -1,7 +1,7 @@
 import arquitetura.drive.TLDriverFactory;
 import arquitetura.models.Device;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import java.net.MalformedURLException;
 
@@ -13,7 +13,7 @@ public class TestBase {
         this.device = device;
     }
 
-    @BeforeClass
+    @BeforeMethod
     public void set() throws MalformedURLException {
         TLDriverFactory.setDriver(  device.getPlattform(),
                                     device.getPlattformVersion(),
@@ -21,7 +21,7 @@ public class TestBase {
                                     device.getUdid());
     }
 
-    @AfterClass
+    @AfterMethod
     public void end(){
         TLDriverFactory.endDriver();
     }

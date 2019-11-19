@@ -4,13 +4,7 @@
       "platform":"Android",
       "platformVersion":"8.1",
       "deviceName": "MotoG6 Plus",
-      "udid": DOIT
-    },
-    {
-      "platform":"Android",
-      "platformVersion":"8.1",
-      "deviceName": "MotoG6 Plus",
-      "udid": DOIT
+      "udid": "0042608190"
     }
   ]
 

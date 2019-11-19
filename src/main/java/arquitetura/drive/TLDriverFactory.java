@@ -10,7 +10,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class TLDriverFactory {
-    private final static String appiumURL = "http://localhost:4444/wd/hub";
+    private final static String appiumURL = "http://localhost:4723/wd/hub";
     private static ManagerDrive managerDrive = new ManagerDrive();
     private static ThreadLocal<AppiumDriver> threadLocal= new ThreadLocal<AppiumDriver>();
 
@@ -19,17 +19,17 @@ public class TLDriverFactory {
         if(plattform.equals("Android")){
             threadLocal.set(
                 new AndroidDriver<MobileElement>(
-                        new URL(appiumURL),
-                        managerDrive.getDriverAndroid(plattformVersion, deviceName, udid)
+                    new URL(appiumURL),
+                    managerDrive.getDriverAndroid(plattformVersion, deviceName, udid)
                 )
             );
 
         }else{
             threadLocal.set(
-                    new IOSDriver<MobileElement>(
-                            new URL(appiumURL),
-                            managerDrive.getDriverAndroid(plattformVersion, deviceName, udid)
-                    )
+                new IOSDriver<MobileElement>(
+                    new URL(appiumURL),
+                    managerDrive.getDriveIOs(plattformVersion, deviceName, udid)
+                )
             );
         }
     }
