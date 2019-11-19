@@ -15,7 +15,7 @@ public class TestLogin extends TestBase {
         super(plattform, plattformVersion, deviceName, udid);
     }
 
-    @Test(enabled=false)
+    @Test
     public void loginSucess(){
         pageInitial.clickOnBtnEntrar();
         Assert.assertTrue(true);
