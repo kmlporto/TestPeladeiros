@@ -1,4 +1,4 @@
-package arquitetura.models;
+package edu.ifpb.peladeiros.arquitetura.models;
 
 import java.util.ArrayList;
 

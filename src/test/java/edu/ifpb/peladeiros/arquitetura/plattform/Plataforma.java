@@ -1,4 +1,4 @@
-package arquitetura.plattform;
+package edu.ifpb.peladeiros.arquitetura.plattform;
 
 public class Plataforma {
     static String ANDROID = "Android";

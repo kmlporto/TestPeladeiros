@@ -1,4 +1,4 @@
-package arquitetura.drive;
+package edu.ifpb.peladeiros.arquitetura.drive;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;

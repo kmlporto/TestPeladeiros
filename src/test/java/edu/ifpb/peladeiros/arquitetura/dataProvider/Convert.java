@@ -1,4 +1,4 @@
-package arquitetura.dataProvider;
+package edu.ifpb.peladeiros.arquitetura.dataProvider;
 
 import java.util.ArrayList;
 

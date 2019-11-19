@@ -1,6 +1,6 @@
-package page;
+package edu.ifpb.peladeiros.page;
 
-import arquitetura.drive.TLDriverFactory;
+import edu.ifpb.peladeiros.arquitetura.drive.TLDriverFactory;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;

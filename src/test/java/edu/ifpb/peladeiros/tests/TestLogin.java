@@ -1,10 +1,12 @@
-import arquitetura.dataProvider.DataDevices;
+package edu.ifpb.peladeiros.tests;
+
+import edu.ifpb.peladeiros.arquitetura.dataProvider.DataDevices;
+import edu.ifpb.peladeiros.page.PageInitial;
 import org.testng.Assert;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
-import page.PageInitial;
 
-public class TestLogin extends TestBase{
+public class TestLogin extends TestBase {
 
     PageInitial pageInitial = new PageInitial();
 

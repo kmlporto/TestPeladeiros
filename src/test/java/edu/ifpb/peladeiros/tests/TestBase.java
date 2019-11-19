@@ -1,5 +1,7 @@
-import arquitetura.drive.TLDriverFactory;
-import arquitetura.models.Device;
+package edu.ifpb.peladeiros.tests;
+
+import edu.ifpb.peladeiros.arquitetura.drive.TLDriverFactory;
+import edu.ifpb.peladeiros.arquitetura.models.Device;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 

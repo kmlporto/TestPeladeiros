@@ -1,4 +1,4 @@
-package page;
+package edu.ifpb.peladeiros.page;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;

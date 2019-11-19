@@ -1,4 +1,4 @@
-package arquitetura.models;
+package edu.ifpb.peladeiros.arquitetura.models;
 
 public class Device {
     String plattform, plattformVersion, deviceName, udid;

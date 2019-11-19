@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test-class Suite" parallel="tests" thread-count="2">
-    <test name="Test-Calculator-" >
-        <parameter name="platformVersion" value="8.0" />
-        <parameter name="deviceName" value="Android Motogz" />
+<suite name="Test-class Suite" parallel="methods" thread-count="2">
+    <test name="Test" >
         <classes>
-            <class name="Test" />
+            <class name="edu.ifpb.peladeiros.tests.TestLogin" />
         </classes>
     </test>
 </suite>

@@ -1,9 +1,9 @@
-package arquitetura.dataProvider;
+package edu.ifpb.peladeiros.arquitetura.dataProvider;
 
-import arquitetura.models.Device;
+import edu.ifpb.peladeiros.arquitetura.models.Data;
+import edu.ifpb.peladeiros.arquitetura.models.Device;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import arquitetura.models.Data;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
