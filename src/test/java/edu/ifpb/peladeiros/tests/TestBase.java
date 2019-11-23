@@ -16,11 +16,16 @@ public class TestBase {
     }
 
     @BeforeMethod
-    public void set() throws MalformedURLException {
-        TLDriverFactory.setDriver(  device.getPlattform(),
-                                    device.getPlattformVersion(),
-                                    device.getDeviceName(),
-                                    device.getUdid());
+    public void set(){
+        try {
+            TLDriverFactory.setDriver(  device.getPlattform(),
+                                        device.getPlattformVersion(),
+                                        device.getDeviceName(),
+                                        device.getUdid());
+        }catch (MalformedURLException e) {
+            e.printStackTrace();
+
+        }
     }
 
     @AfterMethod
