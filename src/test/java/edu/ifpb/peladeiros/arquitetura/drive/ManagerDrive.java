@@ -8,7 +8,7 @@ import java.io.File;
 public class ManagerDrive {
 
     public DesiredCapabilities getDriverAndroid(String plattformVersion, String deviceName, String udid){
-        File f = new File("/src/test/resources/apps/peladeiros.apk");
+        File f = new File("src/test/resources/apps/peladeiros.apk");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("app", f.getAbsolutePath());
