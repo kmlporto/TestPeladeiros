@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class DataDevices {
 
     @DataProvider
-    public Object[][] getDevicesTest() throws IOException, FileNotFoundException {
-        FileReader file = new FileReader("src/test/resources/dados/dispositivos.json");
+    public Object[][] getDevicesTest() throws FileNotFoundException {
+        String file = "src/test/resources/dados/dispositivos.json";
         ArrayList<Device> devices = Util.JsonToObjectsDispositivo(file);
 
         ArrayList<Object[]> objects = new ArrayList<Object[]>();

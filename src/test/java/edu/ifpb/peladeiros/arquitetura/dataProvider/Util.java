@@ -6,8 +6,10 @@ import edu.ifpb.peladeiros.arquitetura.models.Data;
 import edu.ifpb.peladeiros.arquitetura.models.Device;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Util {
 
@@ -21,9 +23,16 @@ public class Util {
     }
 
 
-    public static ArrayList<Device> JsonToObjectsDispositivo(FileReader file){
-        Gson gson = new GsonBuilder().create();
-        BufferedReader br = new BufferedReader(file);
-        return gson.fromJson(br, Data.class).getDevices();
+    public static ArrayList<Device> JsonToObjectsDispositivo(String fileName) {
+        ArrayList<Device> devices = new ArrayList<>();
+        try {
+            Gson gson = new GsonBuilder().create();
+            FileReader file = new FileReader(fileName);
+            BufferedReader br = new BufferedReader(file);
+            devices = gson.fromJson(br, Data.class).getDevices();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return devices;
     }
 }
