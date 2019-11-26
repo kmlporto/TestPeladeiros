@@ -34,4 +34,14 @@ public class PageBase<T> {
         return wait.until(ExpectedConditions.visibilityOf(element)).getText();
     }
 
+    public boolean isElementEnabled(String elementName) {
+        try {
+            MobileElement el = (MobileElement) this.driver.findElementsByAccessibilityId(elementName);
+            return el.isEnabled();
+        }
+        catch (Exception e){
+            return false;
+        }
+    }
+
 }

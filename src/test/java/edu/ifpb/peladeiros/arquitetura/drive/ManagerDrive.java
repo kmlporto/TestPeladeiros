@@ -12,7 +12,7 @@ public class ManagerDrive {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("app", f.getAbsolutePath());
-        capabilities.setPlatform(Platform.ANDROID);;
+        capabilities.setPlatform(Platform.ANDROID);
         capabilities.setCapability("platformVersion", plattformVersion);
         capabilities.setCapability("deviceName", deviceName);
         capabilities.setCapability("udid", udid);

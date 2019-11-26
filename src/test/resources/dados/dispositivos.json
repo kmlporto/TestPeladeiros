@@ -2,9 +2,9 @@
   "dispositivos":[
     {
       "plattform": "Android",
-      "plattformVersion":"6.0",
+      "plattformVersion":"8.0",
       "deviceName": "MotoG6 Plus",
-      "udid": "0011898895"
+      "udid": "0042608190"
     }
   ]
 
